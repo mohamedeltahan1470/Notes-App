@@ -1,58 +1,113 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.container{
+
+.container {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, #cf9aff , #95c0ff);
+    background: linear-gradient(135deg, #cf9aff, #95c0ff);
     color: #fff;
-    padding-top: 4%;
-    padding-left: 10%;
+    padding: 4% 5%;
+    text-align: center;
 }
-.container h1{
+
+.container h1 {
     display: flex;
     align-items: center;
-    font-size: 35px;
+    font-size: 2.5rem;
     font-weight: 600;
+    justify-content: center;
+    gap: 10px;
 }
-.container h1 img{
-    width: 60px;
+
+.container h1 img {
+    width: 50px;
 }
-.container button img{
-width: 25px;
-margin-right: 8px;
+
+.container button img {
+    width: 20px;
+    margin-right: 8px;
 }
-.container button{
+
+.container button {
     display: flex;
     align-items: center;
-    background: linear-gradient(#9418fd , #571094);
+    background: linear-gradient(#9418fd, #571094);
     color: #fff;
-    font-size: 16px;
+    font-size: 1rem;
     outline: 0;
     border: 0;
     border-radius: 40px;
-    padding: 15px 25px ;
+    padding: 12px 20px;
     margin: 30px 0 20px;
     cursor: pointer;
+    justify-content: center;
 }
-.input-box{
+
+.input-box {
     position: relative;
-    width: 100%;
+    width: 90%;
     max-width: 500px;
     min-height: 150px;
     background: #fff;
     color: #333;
     padding: 20px;
-    margin: 20px 0;
-    outline: none;
+    margin: 20px auto;
     border-radius: 5px;
 }
-.input-box img{
-    width: 25px;
-    position:absolute;
+
+.input-box img {
+    width: 20px;
+    position: absolute;
     bottom: 15px;
     right: 15px;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .container h1 {
+        font-size: 2rem;
+    }
+
+    .container h1 img {
+        width: 45px;
+    }
+
+    .container button {
+        font-size: 0.9rem;
+        padding: 10px 18px;
+    }
+
+    .input-box {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container h1 {
+        font-size: 1.8rem;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .container h1 img {
+        width: 40px;
+    }
+
+    .container button {
+        font-size: 0.8rem;
+        padding: 8px 15px;
+    }
+
+    .input-box {
+        width: 100%;
+        min-height: 130px;
+    }
+
+    .input-box img {
+        width: 18px;
+    }
 }
